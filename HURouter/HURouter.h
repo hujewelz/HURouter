@@ -21,6 +21,10 @@ typedef NS_ENUM(NSInteger, HUPresentType) {
 
 - (void)map:(NSString *)className with:(NSString *)key;
 
+- (void)map:(NSDictionary *)dictionary;
+
 - (void)route:(NSString *)route withPresentType:(HUPresentType)type;
+
+- (UIViewController *)matchController:(NSString *)route;
 
 @end

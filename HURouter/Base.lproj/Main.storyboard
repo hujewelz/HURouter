@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="itc-cV-9Df">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="itc-cV-9Df">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,10 +18,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2W-YR-gXT">
-                                <rect key="frame" x="121" y="101" width="123" height="30"/>
+                                <rect key="frame" x="126" y="134" width="123" height="30"/>
                                 <state key="normal" title="push"/>
                                 <connections>
-                                    <segue destination="WEu-1V-G7d" kind="push" id="BGF-Cr-l4e"/>
+                                    <action selector="push:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xct-nf-tYb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4A-8e-edq">
+                                <rect key="frame" x="156" y="196" width="62" height="30"/>
+                                <state key="normal" title="load web"/>
+                                <connections>
+                                    <action selector="loadweb:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Z5-7z-4pX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -33,63 +40,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1219.5" y="374.5"/>
-        </scene>
-        <!--B-->
-        <scene sceneID="wRT-n0-dtg">
-            <objects>
-                <viewController id="WEu-1V-G7d" customClass="BViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ASE-fa-zya"/>
-                        <viewControllerLayoutGuide type="bottom" id="aVw-wR-BnC"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="00j-Z7-snE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDB-BT-EVD">
-                                <rect key="frame" x="166" y="157" width="43" height="30"/>
-                                <state key="normal" title="modal"/>
-                                <connections>
-                                    <segue destination="baX-NI-eeP" kind="modal" id="xgn-UC-R84"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.99607843139999996" green="0.1764705882" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="B" id="7oT-H0-btg"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Yt1-QK-7os" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1627.5" y="374.5"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="gk3-ou-lxT">
-            <objects>
-                <viewController id="baX-NI-eeP" customClass="CViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="yFM-Zm-t3g"/>
-                        <viewControllerLayoutGuide type="bottom" id="zXf-lp-vkd"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ffv-G7-RYN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ryw-jX-a0u">
-                                <rect key="frame" x="161" y="96" width="52" height="30"/>
-                                <state key="normal" title="dismiss"/>
-                                <connections>
-                                    <action selector="dismiss:" destination="baX-NI-eeP" eventType="touchUpInside" id="ixc-st-7Ye"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.99607843139999996" green="0.56862745100000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="shO-Jj-584" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2032.5" y="374.5"/>
         </scene>
         <!--Item-->
         <scene sceneID="sgs-gt-GSU">

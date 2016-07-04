@@ -17,6 +17,8 @@
 		04095B281CE5B1D7007B527C /* UIViewController+router.m in Sources */ = {isa = PBXBuildFile; fileRef = 04095B271CE5B1D7007B527C /* UIViewController+router.m */; };
 		04095B2B1CE5B54D007B527C /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04095B2A1CE5B54D007B527C /* BViewController.m */; };
 		04095B2E1CE5B568007B527C /* CViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04095B2D1CE5B568007B527C /* CViewController.m */; };
+		513D261E1CFFF4CD00ABF02B /* HUNotFoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 513D261D1CFFF4CD00ABF02B /* HUNotFoundViewController.m */; };
+		514C4C5F1D01107000CF3C01 /* HUWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 514C4C5E1D01107000CF3C01 /* HUWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,10 @@
 		04095B2A1CE5B54D007B527C /* BViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
 		04095B2C1CE5B568007B527C /* CViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CViewController.h; sourceTree = "<group>"; };
 		04095B2D1CE5B568007B527C /* CViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CViewController.m; sourceTree = "<group>"; };
+		513D261C1CFFF4CD00ABF02B /* HUNotFoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUNotFoundViewController.h; sourceTree = "<group>"; };
+		513D261D1CFFF4CD00ABF02B /* HUNotFoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUNotFoundViewController.m; sourceTree = "<group>"; };
+		514C4C5D1D01107000CF3C01 /* HUWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUWebViewController.h; sourceTree = "<group>"; };
+		514C4C5E1D01107000CF3C01 /* HUWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +91,12 @@
 				04095B0C1CE5AA45007B527C /* Supporting Files */,
 				04095B231CE5AA84007B527C /* HURouter.h */,
 				04095B241CE5AA84007B527C /* HURouter.m */,
+				513D261C1CFFF4CD00ABF02B /* HUNotFoundViewController.h */,
+				513D261D1CFFF4CD00ABF02B /* HUNotFoundViewController.m */,
 				04095B261CE5B1D7007B527C /* UIViewController+router.h */,
 				04095B271CE5B1D7007B527C /* UIViewController+router.m */,
+				514C4C5D1D01107000CF3C01 /* HUWebViewController.h */,
+				514C4C5E1D01107000CF3C01 /* HUWebViewController.m */,
 			);
 			path = HURouter;
 			sourceTree = "<group>";
@@ -169,12 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				514C4C5F1D01107000CF3C01 /* HUWebViewController.m in Sources */,
 				04095B141CE5AA45007B527C /* ViewController.m in Sources */,
 				04095B2B1CE5B54D007B527C /* BViewController.m in Sources */,
 				04095B281CE5B1D7007B527C /* UIViewController+router.m in Sources */,
 				04095B111CE5AA45007B527C /* AppDelegate.m in Sources */,
 				04095B0E1CE5AA45007B527C /* main.m in Sources */,
 				04095B251CE5AA84007B527C /* HURouter.m in Sources */,
+				513D261E1CFFF4CD00ABF02B /* HUNotFoundViewController.m in Sources */,
 				04095B2E1CE5B568007B527C /* CViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +334,7 @@
 				04095B221CE5AA45007B527C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

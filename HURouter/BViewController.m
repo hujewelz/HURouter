@@ -7,6 +7,7 @@
 //
 
 #import "BViewController.h"
+#import "UIViewController+router.h"
 #import "HURouter.h"
 
 @implementation BViewController
@@ -14,16 +15,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     // Do any additional setup after loading the view, typically from a nib.
-   // NSLog(@"vc: %@", [HURouter shared].presentingViewController);
-    
+    NSLog(@"vc: %@", [HURouter shared].currentViewController);
+    self.title = self.param[@"name"];
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-    //NSLog(@"vc: %@", [HURouter shared].presentingViewController);
-    //    NSLog(@"visibleViewController: %@",self.navigationController.visibleViewController);
-    //    NSLog(@"presentedViewController: %@",self.presentedViewController);
-    //    NSLog(@"presentingViewController: %@",self.presentingViewController);
-    
-}
+
+
 @end
